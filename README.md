@@ -2,6 +2,8 @@
 
 ![CDSA CI/CD Logo](https://raw.githubusercontent.com/ChicagoDSA/Concourse-CI-CD/master/cdsa-cicd-logo.png)
 
+http://45.55.40.82:8080/
+
 A Concourse CI/CD config for technical CDSA projects.
 
 Current projects in pipeline:
