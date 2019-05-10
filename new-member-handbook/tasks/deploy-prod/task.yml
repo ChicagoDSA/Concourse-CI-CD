@@ -1,0 +1,18 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: node
+    tag: 8.12-jessie
+
+inputs:
+  - name: prod-member-handbook
+  - name: ci
+
+caches:
+  - path: member-handbook/node_modules
+
+run:
+  path: ci/new-member-handbook/tasks/deploy-prod/run.sh
