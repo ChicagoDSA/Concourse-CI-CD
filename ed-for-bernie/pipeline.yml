@@ -2,9 +2,8 @@ resources:
   - name: ci
     type: git
     source:
-      uri: git@gitlab.com:Kropotcat/chicago-dsa-pipeline.git
+      uri: https://github.com/ChicagoDSA/Concourse-CI-CD.git
       branch: master
-      private_key: ((gitlab-gpg-key))
 
   - name: dev-ed-for-bernie
     type: git

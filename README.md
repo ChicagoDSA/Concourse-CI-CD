@@ -10,7 +10,12 @@ A Concourse CI/CD config for technical CDSA projects.
 
 Current projects in pipeline:
 - Educators For Bernie
+    - DEV: http://45.55.40.82:3000/
+    - PROD: http://educatorsforbernie.com/
 - New Member Handbook
+    - PROD: http://45.55.40.82/ 
+- Worker Town Hall
+    - PROD: https://www.workertownhall.com/
 
 # Common Commands
 
