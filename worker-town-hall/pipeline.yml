@@ -1,0 +1,32 @@
+resources:
+  - name: ci
+    type: git
+    source:
+      uri: git@gitlab.com:Kropotcat/chicago-dsa-pipeline.git
+      branch: master
+      private_key: ((gitlab-gpg-key))
+
+  - name: prod-worker-town-hall
+    type: git
+    source:
+      uri: https://github.com/ChicagoDSA/Worker-Town-Hall.git
+      branch: master
+
+jobs:
+  - name: Deploy to Prod
+    plan:
+      - aggregate:
+          - get: prod-worker-town-hall
+            trigger: false
+          - get: ci
+            trigger: false
+      - task: deploy-to-vm
+        file: ci/worker-town-hall/tasks/deploy-prod/task.yml
+        params:
+          RSA_KEY: ((deploy-rsa-key))
+
+
+groups:
+  - name: Production
+    jobs:
+      - Deploy to Prod
