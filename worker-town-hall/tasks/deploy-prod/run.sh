@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 set -e -u -x
+cd prod-worker-town-hall
 
 {
     rsa=${RSA_KEY}
 
-    cd worker-town-hall
     ssh-keygen -t rsa -N "" -f rsa.key
     echo "$rsa" > ./rsa.key
     mkdir /root/.ssh
