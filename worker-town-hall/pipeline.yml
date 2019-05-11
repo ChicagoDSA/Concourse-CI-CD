@@ -11,6 +11,7 @@ resources:
     source:
       uri: https://github.com/ChicagoDSA/Worker-Town-Hall.git
       branch: master
+      private_key: ((github-gpg-key))
 
 jobs:
   - name: Deploy to Prod
