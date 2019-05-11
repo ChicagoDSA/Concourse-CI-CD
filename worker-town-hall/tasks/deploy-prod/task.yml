@@ -11,8 +11,5 @@ inputs:
   - name: prod-worker-town-hall
   - name: ci
 
-caches:
-  - path: member-handbook/node_modules
-
 run:
   path: ci/worker-town-hall/tasks/deploy-prod/run.sh
