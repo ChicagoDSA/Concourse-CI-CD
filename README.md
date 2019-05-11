@@ -6,6 +6,8 @@ http://45.55.40.82:8080/
 
 A Concourse CI/CD config for technical CDSA projects.
 
+[Built with Concourse](https://concourse-ci.org/)
+
 Current projects in pipeline:
 - Educators For Bernie
 - New Member Handbook
