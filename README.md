@@ -17,14 +17,14 @@ Current projects in pipeline:
 docker-compose up -d
 `
 
-#### Stop local Concourse instane within docker
+#### Stop local Concourse instance within docker
 `
-docker-compose down -d
+docker-compose down
 `
 
 #### Connect fly CLI to local instance by logging in
 `
-fly login -t main -u admin -p admin
+fly login -t main -c http://45.55.40.82:8080/
 `
 
 #### Apply updated local changes
