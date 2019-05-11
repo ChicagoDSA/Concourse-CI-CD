@@ -24,7 +24,7 @@ docker-compose up -d
 docker-compose down
 `
 
-#### Connect fly CLI to local instance by logging in
+#### Connect fly CLI to instance by logging in
 `
 fly login -t main -c http://45.55.40.82:8080/
 `
