@@ -12,7 +12,7 @@ inputs:
   - name: ci
 
 caches:
-  - path: ed-for-bernie/node_modules
+  - path: dev-ed-for-bernie/node_modules
 
 run:
   path: ci/ed-for-bernie/tasks/deploy-dev/run.sh
