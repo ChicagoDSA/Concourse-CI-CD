@@ -16,4 +16,8 @@ cd dev-ed-for-bernie
 npm install
 npm build
 
-scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/ root@45.55.40.82:/var/www/ed-for-bernie
+ls /var/
+
+docker ps
+
+cp -rf build/ /var/www/ed-for-bernie
