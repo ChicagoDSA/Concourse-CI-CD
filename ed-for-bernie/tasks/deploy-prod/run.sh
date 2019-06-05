@@ -17,3 +17,5 @@ rm -rf .git
 sftp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -r srao_edforbernie@ssh.phx.nearlyfreespeech.net <<EOF
    put -r .
 EOF
+
+rm ~/.ssh/id_rsa
