@@ -18,6 +18,6 @@ npm build
 
 ls /var/
 
-docker ps
+docker ls
 
-cp -rf build/ /var/www/ed-for-bernie
+#cp -rf build/ /var/www/ed-for-bernie
