@@ -16,6 +16,6 @@ cd dev-ed-for-bernie
 npm install
 npm build
 
-scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/ root@45.55.40.82:/var/www/ed-for-bernie
+scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp build/ root@159.203.88.10:/var/www/ed-for-bernie
 
 rm ~/.ssh/id_rsa

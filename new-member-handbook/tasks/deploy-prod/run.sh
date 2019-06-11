@@ -15,6 +15,6 @@ set -e -u -x
 } &> /dev/null
 
 rm -rf .git
-scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp ../prod-member-handbook/ root@45.55.40.82:/var/www/html
+scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -rp ../prod-member-handbook/ root@159.203.88.10:/var/www/html
 
 rm ~/.ssh/id_rsa
