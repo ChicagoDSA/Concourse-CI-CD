@@ -21,9 +21,6 @@ jobs:
             trigger: false
       - task: deploy-to-vm
         file: ci/worker-town-hall/tasks/deploy-prod/task.yml
-        params:
-          RSA_KEY: ((deploy-rsa-key))
-
 
 groups:
   - name: Production
